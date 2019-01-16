@@ -1,0 +1,37 @@
+{
+    "pages": [
+		//pages数组中第一项表示应用启动页,
+		 {
+		    "path": "pages/user/mine",
+		    "style": {
+		        "navigationBarTitleText": "聊天"
+		    }
+		},{
+		    "path": "pages/report/feedback",
+		    "style": {
+		        "navigationBarTitleText": "反馈"
+		    }
+		} 
+    ],
+    "tabBar": {
+        "color": "#666666",
+        "selectedColor": "#1b6edd",
+        "backgroundColor": "#ffffff",
+        "list": [{
+			 "pagePath": "pages/user/mine",
+			"text": "聊天",
+            "iconPath": "static/img/tab_02_d.png",
+            "selectedIconPath": "static/img/tab_02_c.png"
+        },{
+           "pagePath": "pages/report/feedback",
+           "text": "反馈",
+            "iconPath": "static/img/tab_01_d.png",
+            "selectedIconPath": "static/img/tab_01_c.png"
+        }]
+    },
+    "globalStyle": {
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#1b6edd",
+        "backgroundColor": "#F5F5F5"
+    }
+}

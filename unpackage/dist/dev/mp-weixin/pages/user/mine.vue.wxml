@@ -1,0 +1,13 @@
+<template name="7f173fce">
+  <view class="_view data-v-021969d8 uni-column">
+    <view class="_view data-v-021969d8 content" id="content" style=" {{('height:' + (style.contentViewHeight + 'px') + ';')}}">
+      <scroll-view id="scrollview" scroll-y="true" scroll-with-animation="{{true}}" scroll-top="{{scrollTop}}" class="_scroll-view data-v-021969d8" style=" {{('height:' + (style.contentViewHeight + 'px') + ';')}}">
+        <message-show wx:key="index" key="{{index}}" message="{{message}}" id="{{index}}" wx:for="{{messages}}" wx:for-index="index" wx:for-item="message" class="_message-show data-v-021969d8"></message-show>
+        <view id="bottom" class="_view data-v-021969d8"></view>
+      </scroll-view>
+    </view>
+    <view class="_view data-v-021969d8 foot">
+      <chat-input bindsend-message="handleProxy" data-eventid="{{'56P-0'}}" data-comkey="{{$k}}" class="_chat-input data-v-021969d8"></chat-input>
+    </view>
+  </view>
+</template>
