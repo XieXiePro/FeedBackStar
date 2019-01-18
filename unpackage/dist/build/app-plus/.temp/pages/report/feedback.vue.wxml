@@ -1,0 +1,37 @@
+<template name="f7e1757c">
+  <view class="_view data-v-b74d66fe page">
+    <view class="_view data-v-b74d66fe feedback-title">
+      <text class="_text data-v-b74d66fe feedback-quick" bindtap="handleProxy" data-eventid="{{'RCC-0'}}" data-comkey="{{$k}}">快速键入</text>
+    </view>
+    <view class="_view data-v-b74d66fe feedback-body">
+      <textarea placeholder="请随便写点什么吧..." value="{{sendDate.content}}" bindinput="handleProxy" class="_textarea data-v-b74d66fe feedback-textare" data-eventid="{{'CSE-1'}}" data-comkey="{{$k}}" />
+    </view>
+    <view class="_view data-v-b74d66fe feedback-title">
+      <text class="_text data-v-b74d66fe">图片(选填,提供问题截图,总大小10M以下)</text>
+    </view>
+    <view class="_view data-v-b74d66fe feedback-body feedback-uploader">
+      <view class="_view data-v-b74d66fe uni-uploader">
+        <view class="_view data-v-b74d66fe uni-uploader-head">
+          <view class="_view data-v-b74d66fe uni-uploader-title">点击预览图片</view>
+          <view class="_view data-v-b74d66fe uni-uploader-info">{{imageList.length}}/9</view>
+        </view>
+        <view class="_view data-v-b74d66fe uni-uploader-body">
+          <view class="_view data-v-b74d66fe uni-uploader__files">
+            <block wx:key="index" key="{{index}}" wx:for="{{imageList}}" wx:for-index="index" wx:for-item="image">
+              <view class="_view data-v-b74d66fe uni-uploader__file" style="position: relative;">
+                <image class="_image data-v-b74d66fe uni-uploader__img" src="{{image}}" bindtap="handleProxy" data-eventid="{{'7Vy-2-'+index}}" data-comkey="{{$k}}"></image>
+                <view class="_view data-v-b74d66fe close-view" bindtap="handleProxy" data-eventid="{{'gxN-3-'+index}}" data-comkey="{{$k}}">x</view>
+              </view>
+            </block>
+            <view class="_view data-v-b74d66fe uni-uploader__input-box" hidden="{{!(imageList.length < 9)}}">
+              <view class="_view data-v-b74d66fe uni-uploader__input" bindtap="handleProxy" data-eventid="{{'n57-4'}}" data-comkey="{{$k}}"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-b74d66fe foot">
+      <button type="default" bindtap="handleProxy" data-eventid="{{'9ye-5'}}" data-comkey="{{$k}}" class="_button data-v-b74d66fe">反馈</button>
+    </view>
+  </view>
+</template>

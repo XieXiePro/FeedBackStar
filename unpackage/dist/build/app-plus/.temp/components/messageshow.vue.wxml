@@ -1,0 +1,15 @@
+<template name="16c239e1">
+  <view class="_view data-v-43f4b2ef m-item" id="{{'message'+id}}">
+    <view class="_view data-v-43f4b2ef m-left">
+      <image class="_image data-v-43f4b2ef head_icon" src="https://img-cdn-qiniu.dcloud.net.cn/uniapp/app/homeHL.png" wx:if="{{message.user=='home'}}"></image>
+    </view>
+    <view class="_view data-v-43f4b2ef m-content">
+      <view class="_view data-v-43f4b2ef m-content-head {{[message.user == 'customer' ? 'm-content-head-right' : '']}}">
+        <view class="_view data-v-43f4b2ef {{'m-content-head-' + message.user}}">{{message.content}} </view>
+      </view>
+    </view>
+    <view class="_view data-v-43f4b2ef m-right">
+      <image class="_image data-v-43f4b2ef head_icon" src="https://img-cdn-qiniu.dcloud.net.cn/uniapp/app/customerHL.png" wx:if="{{message.user=='customer'}}"></image>
+    </view>
+  </view>
+</template>
